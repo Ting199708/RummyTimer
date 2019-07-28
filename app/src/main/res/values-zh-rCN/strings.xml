@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">拉密计时器</string>
+        <string name="settings">设定</string>
+        <string name="_1_minute">1分钟</string>
+        <string name="_2_minutes">2分钟</string>
+        <string name="_2_players">2人</string>
+        <string name="_30_seconds">30秒</string>
+        <string name="_3_players">3人</string>
+        <string name="_4_players">4人</string>
+        <string name="period">计时长度</string>
+        <string name="player">人数</string>
+        <string name="stop">停止</string>
+        <string name="pause">暂停</string>
+        <string name="resume">继续</string>
+        <string name="no_player">不设定玩家</string>
+</resources>

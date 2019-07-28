@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".EditActivity">
+
+    <item android:id="@+id/action_player"
+        android:title="@string/player"
+        android:orderInCategory="100"
+        app:showAsAction="never">
+
+        <menu>
+            <group android:id="@+id/group1"
+                android:checkableBehavior="single">
+                <item android:id="@+id/player2"
+                    android:title="@string/_2_players"/>
+                <item android:id="@+id/player3"
+                    android:title="@string/_3_players"/>
+                <item android:id="@+id/player4"
+                    android:title="@string/_4_players"
+                    android:checked="true"/>
+                <item android:id="@+id/no_player"
+                    android:title="@string/no_player" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:id="@+id/action_time"
+        android:title="@string/period"
+        android:orderInCategory="100"
+        app:showAsAction="never">
+
+        <menu>
+            <group android:id="@+id/group2"
+                android:checkableBehavior="single">
+                <item android:id="@+id/time1"
+                    android:title="@string/_30_seconds"/>
+                <item android:id="@+id/time2"
+                    android:title="@string/_1_minute"/>
+                <item android:id="@+id/time3"
+                    android:title="@string/_2_minutes"
+                    android:checked="true"/>
+            </group>
+        </menu>
+    </item>
+</menu>

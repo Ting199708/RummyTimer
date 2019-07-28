@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ting199708.com.rummytimer.MainActivity"
+    android:id="@+id/relativeLayout"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/player_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="2:00"
+        android:gravity="center"
+        android:textSize="100sp"
+        android:id="@+id/time_text"
+        android:onClick="start"
+        android:textColor="#000000"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:id="@+id/stop_button"
+        android:onClick="stop"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:layout_above="@+id/adView"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pause"
+        android:id="@+id/pause_button"
+        android:onClick="pause"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:layout_above="@+id/adView"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2240388872700833/7900405786">
+        <!--test:ca-app-pub-3940256099942544/6300978111   ca-app-pub-2240388872700833/7900405786-->
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
